@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TO-DO</title>
+    <script src="https://kit.fontawesome.com/cefe653cc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <form id="todo-form">
+            <h1>TODO APP</h1>
+            <div class="input">
+                <input id="todo-input" type="text" placeholder="Add your new todo">
+                <button id="todo-button"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <ul id="todo-list">
+
+            </ul>
+            <h2>Done Task:</h2>
+            <ul id="done-list">
+
+            </ul>
+        </form>
+        <div id="clear-all-container">
+            <button id="clear-all">clear all</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
