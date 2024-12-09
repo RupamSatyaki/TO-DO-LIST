@@ -9,6 +9,8 @@ let clearAllBtn = document.getElementById("clear-all");
 let clearAllContainer = document.getElementById("clear-all-container");
 const container = document.querySelector(".container");
 
+
+
 // add content in todo list
 todoForm.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -22,6 +24,8 @@ todoForm.addEventListener('submit', (e) => {
     }
 })
 
+
+
 // Add event listener for clear all button
 clearAllBtn.addEventListener('click', () => {
     todoList = [];
@@ -30,6 +34,8 @@ clearAllBtn.addEventListener('click', () => {
     // reset container height
     container.style.height = 'auto';
 })
+
+
 
 // render to-do list
 function renderTodoList() {
@@ -50,6 +56,8 @@ function renderTodoList() {
     });
 }
 
+
+
 // render done list
 function renderDoneList() {
     doneListElement.innerHTML = '';
@@ -64,6 +72,8 @@ function renderDoneList() {
     });
 }
 
+
+
 // done task
 function markAsDone(index) {
     todoList[index].done = true;
@@ -72,12 +82,16 @@ function markAsDone(index) {
     increaseDivHeight();
 }
 
+
+
 // remove task
 function removeTask(index) {
     todoList.splice(index, 1);
     renderTodoList();
     renderDoneList();
 }
+
+
 
 // increase container height
 function increaseDivHeight() {
